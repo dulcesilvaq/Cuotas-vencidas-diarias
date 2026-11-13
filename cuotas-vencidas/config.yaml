@@ -1,0 +1,24 @@
+# ============================================================
+#  CUOTAS VENCIDAS  (edita solo este archivo, o los campos de la app)
+# ============================================================
+
+# Hoja del Excel con el flujo de cuotas. Se busca esa hoja; si no existe, se usa la única hoja
+# cuyo nombre contenga "FLUJO".
+hojas_flujo: ["FLUJO"]
+
+# FECHA DE CORTE = hasta qué día de VENCIMIENTO se cuentan las cuotas vencidas.
+# Se cuentan las cuotas con Fecha de Vencimiento ACTUAL desde el día 1 del mes de esa fecha hasta esa fecha (incluida).
+# Si lo dejas vacío (null), se usa AYER (hoy menos "dias_antes_de_hoy") en la zona horaria indicada.
+#   fecha_corte: "2026-11-12"   -> cuotas con vencimiento del 01/11 al 12/11
+fecha_corte: null
+dias_antes_de_hoy: 1
+zona_horaria: "America/Lima"
+
+# Asesoras (nombre IDÉNTICO a la columna "Coordinadora Cobranza"). El orden de esta lista es el orden del reporte.
+asesoras:
+  - "Babilonia Begazo, Bhia Alejandra"
+  - "Cari Cruz, Ana Silvia"
+  - "Farfan Paucar, Elizabeth Beatriz"
+  - "Flores Benavente, Angela Patricia Faith"
+  - "Licona Manrique, Yamile Yadhira"
+  - "Rojas Neyra, Katherine Milagros"
